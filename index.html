@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Control de acceso Patricia</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="login.css">
-    </head>
-    <body>
-        <section class="hero is-info is-bold is-fullheight">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-4 is-offset-4">
-                        <h3 class="title has-text-black">Control de acceso</h3>
-                        <hr class="login-hr">
-                        <p class="subtitle has-text-black">Inicie sesión para continuar.</p>
-                        <div class="box">
-                            <div class="field">
-                                <div class="control">
-                                    <input id="correo" required minlength="6" class="input is-large" type="email" placeholder="Tu Correo" autofocus="">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input id="password" required class="input is-large" type="password" placeholder="Tu Password">
-                                </div>
-                            </div>
-                            <button  id="btnEnviar" class="button is-block is-info is-large is-fullwidth">Iniciar sesión <i class="fa fa-sign-in" aria-hidden="true"></i></button>
-                        </div>
-                        <div id="error" class="has-text-black">
-                        </div>
-                    </div>
+  <head>
+    <meta lang="es" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Control de acceso Patricia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <section class="hero is-info is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4 mb-1">
+            <h3 class="title has-text-black">Control de acceso</h3>
+            <hr class="login-hr" />
+            <p class="subtitle has-text-black">Inicie sesión para continuar.</p>
+            <form action="" id="login_form" method="post">
+              <div class="box">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      id="correo"
+                      minlength="6"
+                      class="input is-large"
+                      type="email"
+                      placeholder="Tu Correo"
+                      autofocus=""
+                    />
+                  </div>
                 </div>
-            </div>
-        </section>
-        <script async type="text/javascript" src="./index.js"></script>
-    </body>
+                <div class="field">
+                  <div class="control">
+                    <input
+                      id="password"
+                      autocomplete="false"
+                      class="input is-large"
+                      type="password"
+                      placeholder="Tu Password"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  autocomplete="false"
+                  class="button is-block is-info is-large is-fullwidth"
+                >
+                  Iniciar sesión
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div id="error" class="has-text-black"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
